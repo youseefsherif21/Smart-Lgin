@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="shortcut icon" href="/Login/images/pngaaa.com-8250464.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Login/CSS/all.min.css">
+    <link rel="stylesheet" href="/Login/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="/Login/CSS/style.css">
+</head>
+
+<body>
+    <div class="container vh-100 d-flex justify-content-center align-items-center text-center">
+        <form class="form w-75 text-white rounded-4">
+            <div class="inner p-5 m-3">
+                <h2 class="mb-5 text-white">Login</h2>
+                <div class="form-floating mb-4">
+                    <input type="email" class="form-control" id="loginUserEmail" 
+                        placeholder="loginUserEmail">
+                    <label for="loginUserEmail">Email address</label>
+                </div>
+                <div id="emailAlert" class="alert alert-danger p-2 d-none" role="alert">
+                    Please Enter a Valid Email
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="loginUserPassword" placeholder="loginUserPassword">
+                    <label for="loginUserPassword">Password</label>
+                </div>
+                <div id="passAlert" class="alert alert-danger p-2 d-none" role="alert">
+                    Please Enter a Valid Password
+                </div>
+                <button type="submit" class="btn btn-light w-50 mt-4">Login</button>
+                <p class="mt-4">Don't Have account? <a href="/Sign Up/index.html">SignUp</a></p>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="/Login/JS/bootstrap.bundle.min.js"></script>
+    <script src="/Login/JS/script.js"></script>
+</body>
+
+</html>

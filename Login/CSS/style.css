@@ -1,0 +1,66 @@
+body{
+    background-image: url("../images/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.form{
+    backdrop-filter: blur(9px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    a{
+        text-decoration: none;
+        color: white;
+        position: relative;
+    }
+}
+
+.form a::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    bottom: -5px;
+    transition: 0.5s all;
+}
+
+.form a:hover::before{
+    width: 100%;
+}
+
+.form-control{
+    background-color : transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius : 0px;
+
+}
+
+.form-control:focus{
+    color: white;
+    background-color: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    outline: 0;
+    box-shadow : none;
+    border-color: white;
+}
+
+.form-floating>.form-control:focus~label::after{
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+.form-floating>.form-control:focus~label{
+    color: white;
+}
+
+.form-control.is-invalid:focus{
+    box-shadow: none;
+}
+
+.form-control.is-valid:focus{
+    box-shadow: none;
+}
